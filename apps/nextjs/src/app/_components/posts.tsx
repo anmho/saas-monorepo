@@ -1,9 +1,9 @@
 "use client";
 
-import type { RouterOutputs } from "@acme/api";
-import { CreatePostSchema } from "@acme/db/schema";
-import { cn } from "@acme/ui";
-import { Button } from "@acme/ui/button";
+import type { RouterOutputs } from "@saas-monorepo/api";
+import { CreatePostSchema } from "@saas-monorepo/db/schema";
+import { cn } from "@saas-monorepo/ui";
+import { Button } from "@saas-monorepo/ui/button";
 import {
   Form,
   FormControl,
@@ -11,9 +11,9 @@ import {
   FormItem,
   FormMessage,
   useForm,
-} from "@acme/ui/form";
-import { Input } from "@acme/ui/input";
-import { toast } from "@acme/ui/toast";
+} from "@saas-monorepo/ui/form";
+import { Input } from "@saas-monorepo/ui/input";
+import { toast } from "@saas-monorepo/ui/toast";
 
 import { api } from "~/trpc/react";
 

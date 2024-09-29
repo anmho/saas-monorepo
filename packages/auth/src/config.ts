@@ -5,10 +5,9 @@ import type {
 } from "next-auth";
 import { skipCSRFCheck } from "@auth/core";
 import { DrizzleAdapter } from "@auth/drizzle-adapter";
+import { db } from "@saas-monorepo/db/client";
+import { Account, Session, User } from "@saas-monorepo/db/schema";
 import Discord from "next-auth/providers/discord";
-
-import { db } from "@acme/db/client";
-import { Account, Session, User } from "@acme/db/schema";
 
 import { env } from "../env";
 
